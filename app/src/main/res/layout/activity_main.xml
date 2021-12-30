@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_color">
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/overviewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getDateAndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="300sp"
+            android:text="Date and Time"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btnGetDateAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getDateAndTime"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="#E91E63"
+            android:insetLeft="20dp"
+            android:insetRight="20dp"
+            android:text="Get Date And Time" />
+
+        <Button
+            android:id="@+id/btnGoMur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goMur"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="#9C27B0"
+            android:insetLeft="20dp"
+            android:insetRight="20dp"
+            android:text="Go to mur" />
+    </LinearLayout>
+</RelativeLayout>
